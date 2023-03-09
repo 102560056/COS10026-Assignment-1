@@ -26,80 +26,85 @@ tested. -->
 
 
 <body>
-    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-        <!-- Job reference number, exactly 5 alphanumeric characters  -->
-        <label for="job_refrence">Job reference number:</label><br>
-        <input type="text" name="job_refrence" id="job_refrence" pattern="^([a-zA-Z]|[0-9]){5,5}$" maxlength="5"
-            required><br>
+    <main>
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+            <!-- Job reference number, exactly 5 alphanumeric characters  -->
+            <label for="job_refrence">Job reference number:</label><br>
+            <input type="text" name="job_refrence" id="job_refrence" pattern="^([a-zA-Z]|[0-9]){5,5}$" maxlength="5"
+                required><br>
 
-        <!-- First name, max 20 alpha characters -->
-        <label for="first_name">First name:</label><br>
-        <input type="text" name="first_name" id="first_name" placeholder="Firstname" pattern="^([a-zA-Z]|[0-9]){1,20}"
-            maxlength="20" required><br>
+            <!-- First name, max 20 alpha characters -->
+            <label for="first_name">First name:</label><br>
+            <input type="text" name="first_name" id="first_name" placeholder="Firstname"
+                pattern="^([a-zA-Z]|[0-9]){1,20}" maxlength="20" required><br>
 
-        <!-- Last name, max 20 alpha characters -->
-        <label for="last_name">Last name:</label><br>
-        <input type="text" name="first_name" id="last_name" placeholder="placeholder" pattern="^([a-zA-Z]|[0-9]){1,20}"
-            maxlength="20" required><br>
+            <!-- Last name, max 20 alpha characters -->
+            <label for="last_name">Last name:</label><br>
+            <input type="text" name="first_name" id="last_name" placeholder="placeholder"
+                pattern="^([a-zA-Z]|[0-9]){1,20}" maxlength="20" required><br>
 
-        <!-- Date of birth, dd/mm/yyyy  -->
-        <label for="dob">Date of birth:</label><br>
-        <input type="date" name="dob" id="dob" required><br>
+            <!-- Date of birth, dd/mm/yyyy  -->
+            <label for="dob">Date of birth:</label><br>
+            <input type="date" name="dob" id="dob" required><br>
 
-        <!-- Gender,  radio inputs grouped  using a fieldset and legend  -->
-        <label for="gender">Gender:</label><br>
-        <input type="radio" name="gender" id="male" value="male" required>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="female" value="female" required>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="other" value="other" required>
-        <label for="other">Other</label><br>
+            <!-- Gender,  radio inputs grouped  using a fieldset and legend  -->
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other" required>
+            <label for="other">Other</label><br>
 
-        <!-- Street Address,  max 40 characters -->
-        <label for="street_address">Street address:</label><br>
-        <input type="text" name="street_address" id="street_address" maxlength="40" required><br>
+            <!-- Street Address,  max 40 characters -->
+            <label for="street_address">Street address:</label><br>
+            <input type="text" name="street_address" id="street_address" maxlength="40" required><br>
 
-        <!-- State,  drop down selection from 
+            <!-- State,  drop down selection from 
         VIC,NSW,QLD,NT,WA,SA,TAS,ACT -->
-        <label for="state">State:</label><br>
-        <select name="state" id="state" required>
-            <option value="VIC">VIC</option>
-            <option value="NSW">NSW</option>
-            <option value="QLD">QLD</option>
-            <option value="NT">NT</option>
-            <option value="WA">WA</option>
-            <option value="SA">SA</option>
-            <option value="TAS">TAS</option>
-            <option value="ACT">ACT</option>
-        </select>
+            <label for="state">State:</label><br>
+            <select name="state" id="state" required>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+            </select>
 
-        <!-- Postcode, exactly 4 digits  -->
-        <label for="post_code">Postcode:</label><br>
-        <input type="number" name="post_code" id="post_code" maxlength="4" pattern="\d{4,4}" required><br>
+            <!-- Postcode, exactly 4 digits  -->
+            <label for="post_code">Postcode:</label><br>
+            <input type="number" name="post_code" id="post_code" maxlength="4" pattern="\d{4,4}" required><br>
 
-        <!-- Email address, validate format  -->
-        <label for="email">Email address:</label><br>
-        <input type="email" name="email" id="email" required><br>
+            <!-- Email address, validate format  -->
+            <label for="email">Email address:</label><br>
+            <input type="email" name="email" id="email" required><br>
 
-        <!-- Phone number,  8 to 12 digits, or spaces  -->
-        <label for="phone">Phone number:</label><br>
-        <input type="text" name="phone" id="phone" pattern="^[0-9\h]{8,12}$" minlength="8" maxlength="12" required><br>
+            <!-- Phone number,  8 to 12 digits, or spaces  -->
+            <label for="phone">Phone number:</label><br>
+            <input type="text" name="phone" id="phone" pattern="^[0-9\h]{8,12}$" minlength="8" maxlength="12"
+                required><br>
 
-        <!-- Skill list (The last item in list should read “Other skills...”), checkbox inputs 
+            <!-- Skill list (The last item in list should read “Other skills...”), checkbox inputs 
         Other skills,  textarea  -->
-        <label for="skill_list">Skill list:</label><br>
-        <input type="checkbox" name="" id="skill_1" value="skill_1">
-        <label for="skill_1">Skill 1</label><br>
-        <input type="checkbox" name="skill_2" id="skill_2" value="skill_2">
-        <label for="skill_2">Skill 2</label><br>
-        <input type="checkbox" name="skill_3" id="skill_3" value="skill_3">
-        <label for="skill_3">Skill 3</label><br>
-        <input type="checkbox" name="other_skills_box" id="other_skills_box" other_skills="other">
-        <label for="other_skills_box">Other Skills</label>
-        <input type="text" name="other_skills" id="other_skills"><br>
+            <label for="skill_list">Skill list:</label><br>
+            <input type="checkbox" name="" id="skill_1" value="skill_1">
+            <label for="skill_1">Skill 1</label><br>
+            <input type="checkbox" name="skill_2" id="skill_2" value="skill_2">
+            <label for="skill_2">Skill 2</label><br>
+            <input type="checkbox" name="skill_3" id="skill_3" value="skill_3">
+            <label for="skill_3">Skill 3</label><br>
+            <input type="checkbox" name="other_skills_box" id="other_skills_box" other_skills="other">
+            <label for="other_skills_box">Other Skills</label>
 
-        <input type="submit" value="Apply">
-    </form>
+            <!-- Cols will need to be adjusted for width constraints -->
+            <textarea name="skills_description" id="skills_description" cols="20"></textarea><br>
+
+            <input type="submit" value="Apply">
+        </form>
+    </main>
 </body>
 
 </html>
