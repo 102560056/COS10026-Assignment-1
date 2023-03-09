@@ -23,13 +23,11 @@ assignment:
 • display a background graphic. 
 5. Position Descriptions Page: Demonstrated the following specific CSS rules on the jobs.html 
 page: 
-• <h1> elements should have their font variant, size and family etc. set using the 
-short-hand font property.    
+    
 • The <aside> should be 25% of the width of page and float to the right. 
 • The <aside> should have a coloured border with an appropriate margin and 
 padding.  
-• The footer should cover the full width of the page the footer text should be in a 
-small font and centred in the footer.. 
+
 6. About Page: Demonstrated the following specific CSS rules on the about.html page: 
 • Style the definition list so that each <dt> is on the left and the <dd> on the right in a 
 single line. Set the dt to have a common width. 
@@ -43,3 +41,17 @@ background colour specified in hexadecimal format
 Other CSS selectors and properties can be used  as  necessary  and appropriate  for the 
 presentation 
 Do not include any proprietary CSS mark-up, such as –moz- or –webkit  etc. */
+
+
+/* • <h1> elements should have their font variant, size and family etc. set using the 
+short-hand font property. */
+h1 {}
+
+/* • The footer should cover the full width of the page the footer text should be in a 
+small font and centred in the footer..  */
+footer {
+    width: 100%;
+    font-size: small;
+    justify-content: center;
+    text-align: center;
+}
