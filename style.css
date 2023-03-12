@@ -77,3 +77,84 @@ dl {}
     <dt>Milk</dt>
     <dd>White cold drink</dd>
 </dl> */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* Sam.B Global Variables for standardised styling */
+:root {
+    --main-color: #4c00b0
+        /* --main-color: #7600bc */
+        /* --main-color: #8a00c2 */
+        /* --main-color: #a000c8 */
+}
+
+/* Sam.B Overide default behaviours to produce more predictible behaviours */
+html {
+    height: 100vh;
+}
+
+/* Sam.B Overide default behaviours to produce more predictible behaviours */
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    padding: 10vh 10vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: white;
+}
+
+/* Sam.B Hover effects for seleting another page in navbar. change color and scale up with animations */
+nav ul li :hover {
+    color: var(--main-color);
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.75rem;
+    transition: ease 100ms;
+}
+
+/* Sam.B Basic navbar stylings */
+nav ul {
+    display: flex;
+    list-style: none;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    width: 13.34vw;
+
+}
+
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Sam.B All elements tagged with main-color will be assigned the main color allowing us to change our minds later */
+.main-color {
+    color: var(--main-color);
+}
+
+/* Sam.B Temporary icon */
+.icon {
+    scale: 150%;
+}
+
+main {
+    height: 200vh;
+    width: 100vw;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: center;
+}
