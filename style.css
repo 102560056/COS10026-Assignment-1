@@ -104,6 +104,7 @@ font-family: 'Roboto', sans-serif; */
 /* Sam.B Overide default behaviours to produce more predictible behaviours */
 html {
     height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Sam.B Overide default behaviours to produce more predictible behaviours */
@@ -130,7 +131,7 @@ nav ul li :hover {
     color: var(--main-color);
     cursor: pointer;
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 1.65rem;
     transition: ease 100ms;
 }
 
@@ -138,20 +139,19 @@ nav ul li :hover {
 nav ul {
     display: flex;
     list-style: none;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
 nav ul li {
     list-style-type: none;
     text-align: center;
-    width: 13.34vw;
+    width: 13vw;
 }
 
 nav ul a {
     text-decoration: none;
     color: black;
-
+    width: 16vw;
 }
 
 nav ul li a {
@@ -173,7 +173,29 @@ nav ul li a {
 main {
     height: 200vh;
     width: 100vw;
-    padding: 0 10vw;
+    padding: 8vh 10vw;
     display: flex;
     justify-content: center;
+}
+
+form {
+    width: 50%;
+}
+
+.row {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+
+.column {
+    border: none;
+    padding-left: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul li {
+        display: none;
+    }
 }
