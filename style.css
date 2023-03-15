@@ -104,10 +104,12 @@ html {
 nav {
     position: sticky;
     top: 0;
-    padding: 10vh 10vw;
+    padding: 6vh 10vw;
     font-size: 1.5rem;
     font-weight: bold;
     background-color: white;
+    box-shadow: 0 0 .8rem 0 #ccc;
+    border-radius: .5rem;
 }
 
 /* Sam.B Hover effects for seleting another page in navbar. change color and scale up with animations */
@@ -131,9 +133,13 @@ nav ul li {
     list-style-type: none;
     text-align: center;
     width: 13.34vw;
-
 }
 
+nav ul a {
+    text-decoration: none;
+    color: black;
+
+}
 
 nav ul li a {
     color: black;
@@ -157,4 +163,12 @@ main {
     padding: 0 10vw;
     display: flex;
     justify-content: center;
+}
+
+/* MEDIA QUERY SHRINK 700 ox wide*/
+
+@media only screen and (max-width: 700px) {
+    nav {
+        background-color: lightblue;
+    }
 }
