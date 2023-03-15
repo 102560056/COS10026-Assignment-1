@@ -80,6 +80,19 @@ dl {}
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* font-family: 'Calistoga', cursive;
+font-family: 'Roboto', sans-serif; */
+
 /* Sam.B Global Variables for standardised styling */
 :root {
     --main-color: #4c00b0
@@ -163,12 +176,4 @@ main {
     padding: 0 10vw;
     display: flex;
     justify-content: center;
-}
-
-/* MEDIA QUERY SHRINK 700 ox wide*/
-
-@media only screen and (max-width: 700px) {
-    nav {
-        background-color: lightblue;
-    }
 }
