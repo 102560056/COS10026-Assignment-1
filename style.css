@@ -1,3 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Sam.B Global Variables for standardised styling */
+:root {
+    --main-color: #4c00b0;
+    /* --main-color: #7600bc */
+    /* --main-color: #8a00c2 */
+    /* --main-color: #a000c8 */
+}
+
+/* Sam.B Overide default behaviours to produce more predictible behaviours */
+html {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Sam.B Overide default behaviours to produce more predictible behaviours */
+* {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    padding: 6vh 10vw;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 0 0 .8rem 0 #ccc;
+    border-radius: .5rem;
+}
+
+/* Sam.B Hover effects for seleting another page in navbar. change color and scale up with animations */
+nav ul li :hover {
+    color: var(--main-color);
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.65rem;
+    transition: ease 100ms;
+}
+
+/* Sam.B Basic navbar stylings */
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    width: 13vw;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    width: 16vw;
+}
+
+nav ul li a {
+    color: rgb(101, 101, 101);
+    text-decoration: none;
+}
+
+
+/* Sam.B All elements tagged with main-color will be assigned the main color allowing us to change our minds later */
+.main-color {
+    color: var(--main-color);
+}
+
+main {
+    height: 200vh;
+    width: 100vw;
+    padding: 8vh 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+}
+
+form>* {
+    padding: 1rem 0;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+fieldset.full-width {
+    grid-template-columns: 1fr;
+}
+
+/* @media only screen and (max-width: 800px) {
+    nav ul li {
+        display: none;
+    }
+} */
+
+footer>* {
+    width: 80%;
+    color: white;
+    margin: auto;
+}
+
+/* • The footer should cover the full width of the page the footer text should be in a 
+small font and centred in the footer..  */
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    font-size: small;
+    justify-content: center;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
 /* 5. CSS Requirements 
 No style markup should be included in your HTML file. 
 The pages in your website must be styled with CSS and have a consistent ‘look and feel’, particularly 
@@ -37,17 +170,9 @@ particular styles and explain where they are applied.  */
 /* • <h1> elements should have their font variant, size and family etc. set using the 
 short-hand font property. */
 h1 {
-    font: normal bold 80px 'Courier New', monospace;
+    font: normal bold 80px 'Calistoga', cursive;
 }
 
-/* • The footer should cover the full width of the page the footer text should be in a 
-small font and centred in the footer..  */
-footer {
-    width: 100%;
-    font-size: small;
-    justify-content: center;
-    text-align: center;
-}
 
 /* 5. Position Descriptions Page: Demonstrated the following specific CSS rules on the jobs.html 
 page: 
@@ -77,125 +202,3 @@ dl {}
     <dt>Milk</dt>
     <dd>White cold drink</dd>
 </dl> */
-
-
-/* ------------------------------------------------------------------------------------------------------------------------------ */
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
-}
-
-/* font-family: 'Calistoga', cursive;
-font-family: 'Roboto', sans-serif; */
-
-/* Sam.B Global Variables for standardised styling */
-:root {
-    --main-color: #4c00b0
-        /* --main-color: #7600bc */
-        /* --main-color: #8a00c2 */
-        /* --main-color: #a000c8 */
-}
-
-/* Sam.B Overide default behaviours to produce more predictible behaviours */
-html {
-    height: 100vh;
-    overflow-x: hidden;
-}
-
-/* Sam.B Overide default behaviours to produce more predictible behaviours */
-* {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    position: sticky;
-    top: 0;
-    padding: 6vh 10vw;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: white;
-    box-shadow: 0 0 .8rem 0 #ccc;
-    border-radius: .5rem;
-}
-
-/* Sam.B Hover effects for seleting another page in navbar. change color and scale up with animations */
-nav ul li :hover {
-    color: var(--main-color);
-    cursor: pointer;
-    text-align: center;
-    font-size: 1.65rem;
-    transition: ease 100ms;
-}
-
-/* Sam.B Basic navbar stylings */
-nav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-nav ul li {
-    list-style-type: none;
-    text-align: center;
-    width: 13vw;
-}
-
-nav ul a {
-    text-decoration: none;
-    color: black;
-    width: 16vw;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
-
-
-/* Sam.B All elements tagged with main-color will be assigned the main color allowing us to change our minds later */
-.main-color {
-    color: var(--main-color);
-}
-
-/* Sam.B Temporary icon */
-.icon {
-    scale: 150%;
-}
-
-main {
-    height: 200vh;
-    width: 100vw;
-    padding: 8vh 10vw;
-    display: flex;
-    justify-content: center;
-}
-
-form {
-    width: 50%;
-}
-
-.row {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    border: none;
-}
-
-.column {
-    border: none;
-    padding-left: 1rem;
-}
-
-@media only screen and (max-width: 800px) {
-    nav ul li {
-        display: none;
-    }
-}
